@@ -1,0 +1,26 @@
+#Whatsapp { 
+	position:fixed; 
+/* Change location here */
+	bottom:30px; 
+	left:30px; 
+	z-index:9999; /* Keeps the button on top at all times */
+	padding:10px; 
+	border-radius: 2px; 
+	font-size: 12px; 
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 6s; /* 6 second delay before flashing every second */
+  -webkit-animation: blink 1s step-start 6s;
+  	 animation-iteration-count: 5; /* use infinite to keep flashing permanently and annoy your visitors */
+}
